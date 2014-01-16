@@ -13,6 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jayway.Cars.Infrastructure.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cars", "Cars", "{3A519D8A-E796-498F-9C08-25A4209EF8C9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{29B1EDAA-1363-4EA1-860A-F11B2705019C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jayway.Cars.IT", "Jayway.Cars.IT\Jayway.Cars.IT.csproj", "{8D1FAB86-C8F3-48AF-B1F3-DB2FBB071743}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +44,10 @@ Global
 		{A60D51B2-E96B-4652-BAD2-002C111B1DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A60D51B2-E96B-4652-BAD2-002C111B1DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A60D51B2-E96B-4652-BAD2-002C111B1DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D1FAB86-C8F3-48AF-B1F3-DB2FBB071743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D1FAB86-C8F3-48AF-B1F3-DB2FBB071743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D1FAB86-C8F3-48AF-B1F3-DB2FBB071743}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D1FAB86-C8F3-48AF-B1F3-DB2FBB071743}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,5 +55,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{43C6F417-2163-4794-858E-185A8C63B870} = {3A519D8A-E796-498F-9C08-25A4209EF8C9}
 		{A60D51B2-E96B-4652-BAD2-002C111B1DB9} = {3A519D8A-E796-498F-9C08-25A4209EF8C9}
+		{8D1FAB86-C8F3-48AF-B1F3-DB2FBB071743} = {3A519D8A-E796-498F-9C08-25A4209EF8C9}
 	EndGlobalSection
 EndGlobal

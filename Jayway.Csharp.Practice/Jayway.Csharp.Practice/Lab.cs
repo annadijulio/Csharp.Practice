@@ -3,31 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Jayway.Csharp.Practice.Extensions;
 
 namespace Jayway.Csharp.Practice
 {
-    class Lab
+    public class Lab
     {
-        public void test() {
-
-            var ORMlist = new List<Car> { new Car() { Id = 1}, new Car() { Id = 2} };
-           
-
-        }
-    }
-
-
-    public class InMemoryCarRepository : IRepository<T> {
-
-        IEnumerable<Car> IRepository<Car>.GetAll()
+        public void Collections()
         {
-            throw new NotImplementedException();
+            
+            var list = new List<int> {1, 2, 3} as IEnumerable<int>;
+          //Action<int>  Func
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+            
+            list.ForEach(Console.WriteLine);
         }
-    }
 
-    public interface IRepository<T> 
-        where T : int
-    {
-         IEnumerable<T> GetAll();
     }
 }

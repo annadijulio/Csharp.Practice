@@ -6,7 +6,7 @@ namespace Jayway.Csharp.Practice.Extensions
     {
         public static int Times(this int self, int value)
         {
-            throw new NotImplementedException();
+            return self*value;
         }
 
     }

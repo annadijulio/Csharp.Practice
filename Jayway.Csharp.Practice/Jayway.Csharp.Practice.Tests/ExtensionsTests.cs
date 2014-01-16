@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using Jayway.Csharp.Practice.Extensions;
 using NUnit.Framework;
@@ -14,6 +15,7 @@ namespace Jayway.Csharp.Practice.Tests
     public class ExtensionsTests
     {
 
+        [Test]
         public void Times()
         {
             var result = 3.Times(3);
@@ -32,13 +34,14 @@ namespace Jayway.Csharp.Practice.Tests
             //Assert.IsTrue(result);
         }
 
+        [Test]
         public void ForEach()
         {
             //Arrange
-            var ints = new ArrayList {1, 2, 3};
+            var ints = new List<int> {1, 2, 3};
             var i = 0;
             //Act
-            //ints.ForEach(x => i=i+x);
+            ints.ForEach(x => i = i + x);
 
             //Assert
             Assert.AreEqual(6, i);
