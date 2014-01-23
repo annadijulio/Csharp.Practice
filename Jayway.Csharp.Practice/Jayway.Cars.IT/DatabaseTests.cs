@@ -1,4 +1,5 @@
 ﻿using Jayway.Cars.Infrastructure.Ef;
+using Jayway.Cars.Infrastructure.Ef.Dummy;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace Jayway.Cars.IT
         [Test]
         public void CreateDatabase() {
 
-            var ctx = new CarContext();
+            var ctx = new CarContext(new Tests.TestLogger());
             ctx.Database.Delete();
             ctx.Database.Create();
 

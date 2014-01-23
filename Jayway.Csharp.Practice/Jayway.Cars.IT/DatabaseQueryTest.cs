@@ -2,6 +2,7 @@
 using System.Linq;
 using Jayway.Cars.Domain;
 using Jayway.Cars.Infrastructure.Ef;
+using Jayway.Cars.Infrastructure.Ef.Dummy;
 using NUnit.Framework;
 
 namespace Jayway.Cars.IT
@@ -17,7 +18,7 @@ namespace Jayway.Cars.IT
             /*
              Watch out for multiple instances of CarContext() as a transaction of one CarContext might not be finished before another CarContext transaction starts, possibly resulting in corrupt data.
              */
-            _ctx = new CarContext();
+            _ctx = new CarContext(new Tests.TestLogger());
             _ctx.Database.CreateIfNotExists();
             //ctx.ChangeTracker.DetectChanges(); ChangeTracker
             _ctx.Cars.Add(new Car() {Name = "TestCar"});
