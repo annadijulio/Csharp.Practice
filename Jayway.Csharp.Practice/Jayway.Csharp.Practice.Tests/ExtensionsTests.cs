@@ -46,5 +46,25 @@ namespace Jayway.Csharp.Practice.Tests
             //Assert
             Assert.AreEqual(6, i);
         }
+
+        [Test]
+        public void TestAny2Exists()
+        {
+            //Arrange
+            var list = new List<int> { 1, 2, 3 } as IEnumerable<int>;
+
+            //Assert
+            Assert.IsTrue(list.Any2(nbr=>nbr==3));
+        }
+
+        [Test]
+        public void TestAny2NotExist()
+        {
+            //Arrange
+            var list = new List<int> { 1, 2, 3 } as IEnumerable<int>;
+
+            //Assert
+            Assert.IsFalse(list.Any2(nbr => nbr == 5));
+        }
     }
 }

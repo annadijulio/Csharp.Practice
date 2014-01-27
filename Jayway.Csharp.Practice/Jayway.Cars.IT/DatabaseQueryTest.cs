@@ -4,6 +4,9 @@ using Jayway.Cars.Domain;
 using Jayway.Cars.Infrastructure.Ef;
 using Jayway.Cars.Infrastructure.Ef.Dummy;
 using NUnit.Framework;
+using System.Collections.Generic;
+using 
+
 
 namespace Jayway.Cars.IT
 {
@@ -38,6 +41,9 @@ namespace Jayway.Cars.IT
             Assert.IsNotNull(car);
             Assert.AreEqual(1, car.Id);
         }
+
+        
+
 
         public void Demo()
         {

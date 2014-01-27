@@ -14,6 +14,21 @@ namespace Jayway.Csharp.Practice.Extensions
             }
         }
 
+     
+
+        public static bool Any2<T>(this IEnumerable<T> self, Func<T, bool> predicate)
+        {
+            foreach (var item in self)
+            {
+                if (predicate(item))
+                {
+                    return true;
+                }
+
+            }
+            return false;
+        } 
+
         public static IEnumerable<T> Where<T>(this IEnumerable<T> self, Func<T, bool> predicate)
         {
             var result = new List<T>();

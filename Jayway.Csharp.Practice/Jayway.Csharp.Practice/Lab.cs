@@ -56,6 +56,7 @@ namespace Jayway.Csharp.Practice
             list.ForEach(x=>Console.WriteLine(x));
             list.ForEach(Console.WriteLine);
 
+
             var overTwo = list.Any(x => x > 2);
 
             //var f = AddTwoFactory(Add);
