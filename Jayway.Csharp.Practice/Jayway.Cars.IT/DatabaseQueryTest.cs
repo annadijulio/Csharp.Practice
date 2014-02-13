@@ -5,7 +5,7 @@ using Jayway.Cars.Infrastructure.Ef;
 using Jayway.Cars.Infrastructure.Ef.Dummy;
 using NUnit.Framework;
 using System.Collections.Generic;
-using 
+
 
 
 namespace Jayway.Cars.IT
